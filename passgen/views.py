@@ -4,7 +4,7 @@ import random
 
 # Create your views here.
 def home(request):
-    return HttpResponse("<h2>Hello World</h2> <br> <h4> I am Martin Githae, Python Engineer, AI and Machine Learning Expert</h4>") 
+    return render(request, 'home.html') 
 
 def passgen(request):
     char = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()'
